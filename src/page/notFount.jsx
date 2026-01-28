@@ -9,7 +9,7 @@ const Data = [
     }
 ];
 
-const NotFound = () => {
+const notFound = () => {
   const notFoundData = Data[0]; // Get the first (and only) item from Data
 
   return (
@@ -57,4 +57,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default notFound
