@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 // import { Star, UserRound, Clock4, ShieldCheck, Headset } from 'lucide-react';
 import { Star ,UserRound ,Clock4,ShieldCheck,Award   } from 'lucide-react';
 
@@ -342,11 +344,13 @@ const Home = () => {
           Most popular courses chosen by our students
         </p>
 
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-          {courses.map((course) => (
-            <CourseCard key={course.id} course={course} />
-          ))}
-        </div>
+       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+  {courses.map((course) => (
+    <Link key={course.id} to={`/detail/${course.id}`}>
+      <CourseCard course={course} />
+    </Link>
+  ))}
+</div>
       </div>
       
 
