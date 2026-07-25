@@ -145,13 +145,13 @@ const courses = [
 
 const Home = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-8">
+    <div className="bg-gray-100 min-h-screen p-5">
       {/* HERO SECTION */}
     
-     <div className="bg-gray-300 w-[90%] m-auto md:mt-16 lg:mt-20 p-3 md:p-6 rounded-2xl shadow-2xl shadow-blue-400 border border-gray-400">
+     <div className="bg-gray-100 w-[75%] m-auto md:mt-14 lg:mt-20 p-3 md:p-6 rounded-2xl shadow-2xl shadow-blue-400 border border-gray-200">
   <div
     className="flex flex-col lg:flex-row justify-between items-center bg-blue-600 shadow-[0_0_40px_rgba(0,0,0,0.4)]
-      rounded-2xl p-3 md:p-10 gap-10 lg:gap-14 w-full lg:w-[90%] mx-auto " >
+      rounded-2xl p-3 md:p-10 gap-10 lg:gap-14 w-full lg:w-[95%] mx-auto " >
     {/* LEFT */}
     <div className="max-w-xl text-white text-center lg:text-left">
       <h1 className="font-bold text-3xl sm:text-4xl lg:text-6xl mb-5">
@@ -212,7 +212,7 @@ const Home = () => {
       </div>
     </div>
   </div>
-</div>
+
 
 
       {/* STATISTICS */}
@@ -403,6 +403,7 @@ const Home = () => {
     
 
       <div className="h-20"></div>
+      </div>
     </div>
   );
 };

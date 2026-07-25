@@ -5,6 +5,7 @@ import ServiceCard from "../components/ServiceCard"
 const Services = () => {
   return (
     <div className="mt-16 mb-20">
+      <div className="bg-white shadow shadow-gray-400 w-[75%] mx-auto p-10">
       <div
         className="relative mx-auto w-[95%] h-[520px] rounded-2xl overflow-hidden shadow-2xl shadow-gray-700
                    bg-[url('https://etec-elearning.vercel.app/assets/3-COnmcKFG.png')]
@@ -25,10 +26,10 @@ const Services = () => {
         </div>
       </div>
       {/* =========================== */}
-      <div className=" w-[90%] mt-20 mx-auto shadow-2xl  " >
+      <div className=" w-[95%] mt-20 mx-auto shadow-2xl  " >
        
         <ServiceCard />
-        <div className="bg-blue-700 w-[90%] mx-auto rounded-2xl p-2">
+        <div className="bg-blue-700 w-[95%] mx-auto rounded-2xl p-2">
   {/* បន្ថែម flex flex-col items-center នៅទីនេះ */}
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex flex-col items-center text-center">
     
@@ -50,7 +51,7 @@ const Services = () => {
 <div className="mt-10 h-10"></div>
 
       </div>
-      
+      </div>
     </div>
   );
 };

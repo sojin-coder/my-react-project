@@ -1,6 +1,6 @@
 import React from "react";
-import { Users, BookOpen, Award, Star, Target, Quote } from "lucide-react";
-
+import { Users, BookOpen, Award, Star, Target, Quote, ChevronRight } from "lucide-react";
+import AboutUs from "../components/AboutUs";
 const stats = [
   {
     icon: <Users className="text-blue-600" size={24} />,
@@ -54,10 +54,10 @@ const testimonials = [
 
 const Info = () => {
   return (
-    <div className="bg-gray-50 min-h-screen font-sans">
+    <div className="bg-gray-100 w-[75%] min-h-screen font-sans mx-auto shadow shadow-gray-400 mt-10 rounded-2xl">
       {/* Hero & Header */}
       <div className="text-center py-16 px-6 bg-white">
-        <div className="bg-blue-50 px-4 py-1 rounded-full w-fit mx-auto mb-6 border border-blue-100">
+        <div className="bg-blue-100 px-4 py-1 rounded-full w-fit mx-auto mb-6 border border-blue-100">
           <p className="text-blue-700 text-sm font-bold uppercase tracking-wider">
             Established 2017
           </p>
@@ -105,45 +105,18 @@ const Info = () => {
         </div>
       </div>
 
-      {/* Tabs Navigation */}
-      <div className="flex justify-center mt-16">
-        <div className="bg-gray-200/50 p-1 rounded-xl flex gap-2">
-          {["Mission", "Vision", "Story", "Team"].map((tab) => (
-            <button
-              key={tab}
-              className={`px-8 py-2 rounded-lg text-sm font-semibold transition-all ${
-                tab === "Mission"
-                  ? "bg-white text-blue-600 shadow-sm border-b-2 border-blue-600"
-                  : "text-gray-500 hover:text-gray-700"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-      </div>
+   
 
       {/* Mission Content */}
-      <div className="max-w-5xl mx-auto px-6 mt-12 pb-10">
-        <div className="bg-white p-10 md:p-16 rounded-[2rem] shadow-lg border border-gray-50 relative overflow-hidden">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="bg-blue-100 p-2 rounded-full text-blue-600">
-              <Target size={28} />
-            </div>
-            <h2 className="text-3xl font-extrabold text-slate-900">Our Mission</h2>
-          </div>
-          <p className="text-xl md:text-2xl text-gray-500 italic leading-relaxed font-light">
-            "To democratize education by providing accessible, affordable, and
-            high-quality learning experiences that empower individuals to
-            achieve their personal and professional goals."
-          </p>
-        </div>
+      <div className="max-w-5xl mx-auto px-6 mt-12 pb-5">
+        
+        <AboutUs/>
       </div>
 
       {/* Success Stories */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 text-center mb-16">
+          <h2 className="text-4xl font-bold text-slate-900 text-center mb-10">
             Success Stories
           </h2>
 
@@ -185,6 +158,19 @@ const Info = () => {
           </div>
         </div>
       </section>
+      <div className=" max-w-7xl mx-auto px-6 py-20">
+        <div className="bg-indigo-900 rounded-3xl p-12 text-center text-white shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full -mr-32 -mt-32"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500 rounded-full -ml-32 -mb-32"></div>
+          </div>
+          <h1 className="text-4xl font-bold mb-4"> Ready to start your journey?</h1>
+          <p className="text-indigo-100 mb-10 text-lg max-w-xl mx-auto"> Join over 50,000 students already learning and building the future of technology.</p>
+          <button className="bg-white text-indigo-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-transform active:scale-95 flex items-center gap-2 mx-auto">
+            Enroll Now <ChevronRight />
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

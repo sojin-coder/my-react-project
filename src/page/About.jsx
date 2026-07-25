@@ -14,10 +14,10 @@ import {
 
 function About() {
   return (
-    <div className="mt-1">
-      <div className="p-8 border border-gray-400 bg-gray-200 mb-3 w-[90%] m-auto rounded-xl ">
+    <div className="mt-5">
+      <div className="p-8  bg-white mb-3 w-[75%] m-auto rounded-xl shadow shadow-gray-500">
         <div className="flex justify-between gap-10 p-8">
-          <div className="bg-gray-300 p-10 rounded-2xl shadow-2xl shadow-gray-700">
+          <div className="bg-gray-100 p-10 rounded-2xl shadow-2xl shadow-gray-400">
             <div className=" w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center  mb-4">
               {/* <Clock4 /> */}
               <Target />
@@ -31,7 +31,7 @@ function About() {
               background or location.
             </p>
           </div>
-          <div className="bg-gray-400 p-10 rounded-2xl shadow-2xl shadow-gray-700">
+          <div className="bg-gray-100 p-10 rounded-2xl shadow-2xl shadow-gray-400">
             <div className=" w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center  mb-4">
               {/* <Clock4 /> */}
               <Eye />
@@ -64,7 +64,7 @@ function About() {
             </p>
           </div>
         </div>
-      </div>
+      
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <Timeline />
       </div>
@@ -78,9 +78,9 @@ function About() {
           our students.
         </p>
       </div>
-      <div className="mt-20 w-[80%] m-auto ">
+      <div className="mt-20 w-[95%] m-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-30">
-          <div className="text-center shadow-xl  rounded-2xl p-5 hover:shadow-2xl shadow-gray-700">
+          <div className="text-center shadow-xl  rounded-2xl p-5 hover:shadow-2xl shadow-gray-400">
             <div className=" w-16 h-16  text-blue-700 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 mt-6">
               {/* <UserRound /> */}
               <Heart size={40} />
@@ -92,7 +92,7 @@ function About() {
               possibilities.
             </p>
           </div>
-          <div className="text-center shadow-xl  rounded-2xl p-5 hover:shadow-2xl shadow-gray-700">
+          <div className="text-center shadow-xl  rounded-2xl p-5 hover:shadow-2xl shadow-gray-400">
             <div className=" w-16 h-16 text-blue-700 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 mt-6">
               {/* <Clock4 /> */}
               <UserRound size={40} />
@@ -104,7 +104,7 @@ function About() {
               learning experience.
             </p>
           </div>
-          <div className="text-center shadow-xl  rounded-2xl p-5 hover:shadow-2xl shadow-gray-700">
+          <div className="text-center shadow-xl  rounded-2xl p-5 hover:shadow-2xl shadow-gray-400">
             <div className=" w-16 h-16 text-blue-700 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 mt-6">
               <ShieldCheck size={40} />
             </div>
@@ -115,7 +115,7 @@ function About() {
               and support.
             </p>
           </div>
-          <div className="text-center shadow-xl rounded-2xl p-5 hover:shadow-2xl shadow-gray-700">
+          <div className="text-center shadow-xl rounded-2xl p-5 hover:shadow-2xl shadow-gray-400">
             <div className=" w-16 h-16 text-blue-700 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 mt-6">
               {/* <Headset /> */}
               <Globe size={40} />
@@ -136,7 +136,7 @@ function About() {
           Passionate professionals dedicated to transforming online education.
         </p>
       </div>
-      <div className="mt-15  w-[80%] m-auto ">
+      <div className="mt-15  w-[95%] m-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
             <div className="h-80 flex items-center justify-center w-full">
@@ -220,7 +220,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 mt-10 rounded-2xl">
+        <div className="bg-gray-200 mt-10 rounded-2xl w-[100%]">
           <div className="p-5">
             <h1 className="text-center font-bold text-4xl text-gray-700 mt-5">
               What Our Students Say
@@ -358,6 +358,7 @@ function About() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

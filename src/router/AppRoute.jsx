@@ -15,7 +15,11 @@ function AppRoute() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+       
+        <Route path="about" class element={<div className="mt-10">
+        <About />
+      </div>} />
+       
         <Route path="services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
         <Route path="info" element={<Info />} />

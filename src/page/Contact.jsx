@@ -58,8 +58,8 @@ const ContactPage = () => {
   
 
   return (
-    <div className="bg-gray-50 min-h-screen pb-20">
-      <div className="bg-gray-300 w-[90%] rounded-2xl shadow-2xl pt-1 mt-10 mx-auto">
+    <div className="bg-gray-50 w-[75%] min-h-screen pb-20 mx-auto" >
+      <div className="bg-gray-300 w-[95%] rounded-2xl shadow-2xl pt-1 mt-10 mx-auto">
 
         {/* HERO */}
         <div className="relative mx-auto w-[95%] h-[500px] mt-10 rounded-3xl overflow-hidden shadow-2xl bg-[url('https://etec-elearning.vercel.app/assets/2-m2xJnEZj.png')] bg-cover bg-center">
@@ -81,7 +81,7 @@ const ContactPage = () => {
                 key={i}
                 className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:-translate-y-2 transition"
               >
-                <div className={`${card.color} text-white p-3 rounded-xl mb-4`}>
+                <div className={`${card.color} text-white p-3 rounded-xl mb-4 w-[50px]`}>
                   {card.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{card.title}</h3>
@@ -155,18 +155,30 @@ const ContactPage = () => {
             </div>
 
             <div className="bg-white p-10 rounded-3xl shadow-xl">
-              <h2 className="text-3xl font-bold mb-6">FAQs</h2>
-              <p className="text-gray-600">Response within 24 hours.</p>
+              <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+              <p className="text-gray-600 font-bold">Response time: <span className="font-light"> Within 24 hours </span></p>
+              <p className="text-gray-600 font-bold">Consultations: <span className="font-light"> Free initial consultation</span></p>
+              <p className="text-gray-600 font-bold ">Visits: <span className="font-light">Virtual or in-person available
+
+ </span></p>
             </div>
 
           </div>
         </div>
 
-        <div className="w-[80%] mx-auto mt-10">
+        <div className="w-[95%] mx-auto mt-10">
           <LocationHub />
         </div>
-
+       <div className="  bg-gradient-to-r from-gray-800 to-gray-900 text-white w-[95%] mx-auto mt-20 ">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4"> Need Immediate Assistance?</h2>
+          <p className="text-lg sm:text-xl mb-6 opacity-90"> Our support team is available 24/7 for urgent matters</p>
+          <a href="tel:+15551234567" class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors duration-300 shadow-lg">Call Us Now</a>
+        </div>
       </div>
+      <div className="p-10"></div>
+      </div>
+      
     </div>
   );
 };
